@@ -1,0 +1,21 @@
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742125::Definition,1073742126::Name,1075849148::Comments,1075849176::Physical Name,1075849763::Parent Entity  [read only],1075849764::Child Entity  [read only]
+1075839016::200,Employee completes MovieRentalRecord,Relationship,,FK_MovieRentalRecord_Employee,,FK_MovieRentalRecord_Employee,Employee,MovieRentalRecord
+1075839016::208,MovieCopy is rented under MovieRentalRecord,Relationship,,FK_MovieRentalRecord_MovieCopy,,FK_MovieRentalRecord_MovieCopy,MovieCopy,MovieRentalRecord
+1075839016::213,Movie is rented as MovieCopy,Relationship,,FK_MovieCopy_Movie,,FK_MovieCopy_Movie,Movie,MovieCopy
+1075839016::221,Store employs is Employee,Relationship,,FK_Employee_Store,,FK_Employee_Store,Store,Employee
+1075839016::225,Employee reports to Employee,Relationship,,FK_Employee_Employee,,FK_Employee_Employee,Employee,Employee
+1075839016::257,Customer rents under MovieRentalRecord,Relationship,,FK_MovieRentalRecord_Customer,,FK_MovieRentalRecord_Customer,Customer,MovieRentalRecord
+1075839016::271,CustomerCredit rents under MovieRentalRecord,Relationship,,FK_MovieRentalRecord_CustomerCredit,,FK_MovieRentalRecord_CustomerCredit,CustomerCredit,MovieRentalRecord
+1075839016::278,FK_Customer_Invoice_CUST CREDIT (CustomerCredit to CUSTOMERINVOICE),Relationship,,FK_CUSTOMERINVOICE_CustomerCredit,,FK_CUSTOMERINVOICE_CustomerCredit,CustomerCredit,CUSTOMERINVOICE
+1075839016::282,FK_Customer_Invoice_CUST (Customer to CUSTOMERINVOICE),Relationship,,FK_CUSTOMERINVOICE_Customer,,FK_CUSTOMERINVOICE_Customer,Customer,CUSTOMERINVOICE
+1075839016::291,FK_Customer_Invoice_MO RENT REC (MovieRentalRecord to CUSTOMERINVOICE),Relationship,,FK_CUSTOMERINVOICE_MovieRentalRecord,,FK_CUSTOMERINVOICE_MovieRentalRecord,MovieRentalRecord,CUSTOMERINVOICE
+1075839016::300,FK_Customer_Invoice_MOVIE (Movie to CUSTOMERINVOICE),Relationship,,FK_CUSTOMERINVOICE_Movie,,FK_CUSTOMERINVOICE_Movie,Movie,CUSTOMERINVOICE
+1075839016::302,FK_Overdue_Notice_CUST CREDIT (CustomerCredit to OVERDUENOTICE),Relationship,,FK_OVERDUENOTICE_CustomerCredit,,FK_OVERDUENOTICE_CustomerCredit,CustomerCredit,OVERDUENOTICE
+1075839016::307,FK_Overdue_Notice_CUST (Customer to OVERDUENOTICE),Relationship,,FK_OVERDUENOTICE_Customer,,FK_OVERDUENOTICE_Customer,Customer,OVERDUENOTICE
+1075839016::316,FK_Overdue_Notice_MO RENT REC (MovieRentalRecord to OVERDUENOTICE),Relationship,,FK_OVERDUENOTICE_MovieRentalRecord,,FK_OVERDUENOTICE_MovieRentalRecord,MovieRentalRecord,OVERDUENOTICE
+1075839016::328,Movie rents MovieStore,Relationship,,FK_MovieStore_Movie,,FK_MovieStore_Movie,Movie,MovieStore
+1075839016::333,Store is in MovieStore,Relationship,,FK_MovieStore_Store,,FK_MovieStore_Store,Store,MovieStore
+1075839016::353,Employee receives Payment,Relationship,,FK_Payment_Employee,,FK_Payment_Employee,Employee,Payment
+1075839016::357,Customer makes Payment,Relationship,,FK_Payment_Customer,,FK_Payment_Customer,Customer,Payment
+1075839016::361,CustomerCredit makes Payment,Relationship,,FK_Payment_CustomerCredit,,FK_Payment_CustomerCredit,CustomerCredit,Payment
+1075839016::365,Payment is made on MovieRentalRecord,Relationship,,FK_MovieRentalRecord_Payment,,FK_MovieRentalRecord_Payment,Payment,MovieRentalRecord
